@@ -1,25 +1,32 @@
 .holder {
-	display: grid; 
-	grid-template-columns: 100px 100px 100px;
-	width:100px;
-	height:100px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:nowrap;
+	width: 100%;
+	
+	
 }
 
 .item {
   color: black; 
-  font-size: 30px; 
+  font-size: 30px;
+	width: 100px;
+	height: 100px; 
+	
 
 }
 
 .item:nth-child(1) {
   background-color: red;
+	order:2;
 }
 
 .item:nth-child(2) {
   background-color: blue;
+	order:3;
 }
 
 .item:nth-child(3) {
   background-color: green;
-  grid-row:1/2;
+  order:1;
 }
